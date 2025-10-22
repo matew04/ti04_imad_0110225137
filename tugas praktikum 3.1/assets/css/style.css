@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#container-form-order-pizza {
+  width: 50vw;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.title-form-box > .title-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description-form > .description-text {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+p {
+  font-weight: 600;
+}
+
+#pizza-crust-field,
+#toppings-field,
+#quantity-field,
+#pizza-specs,
+#delivery-instructions-field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#pizza-order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 70%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+input[type="number"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #333;
+}

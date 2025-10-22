@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Praktikum 2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f8f8f8;
+      }
+      header,
+      footer {
+        background: #fff;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+      header a {
+        margin: 0 50px;
+        color: #807676;
+        text-decoration: none;
+      }
+      footer a {
+        margin: 0 10px;
+        color: #807676;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+      }
+
+      h2 {
+        border-bottom: 2px solid #000000;
+        display: inline-block;
+        width: 50rem;
+      }
+
+      th {
+        border-bottom: 2px solid #b1afaf; 
+      }
+      table {
+        width: 60%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+      }
+      th {
+        text-align: left;
+        padding-bottom: 10px;
+      }
+      .summary {
+        width: 30%;
+        background: #fff;
+        padding: 15px;
+        border: 1px solid #ddd;
+      }
+      .summary button {
+        width: 100%;
+        padding: 10px;
+        background: #0073e6;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .summary button:hover {
+        background: #005bb5;
+      }
+      footer {
+        border-top: 1px solid #ddd;
+        font-size: 14px;
+      }
+      input[type="email"] {
+        padding: 5px;
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; gap: 8px">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xnrOW3SZyJ1vkpmLA38eOszm2Y70YiEYNg&s"
+          alt="Logo"
+          width="50"
+          height="30"
+        />
+        <b>Math Store</b>
+      </div>
+      <nav>
+        <a href="#">Category 1</a> | <a href="#">Category 2</a> |
+        <a href="#">Category 3</a>
+      </nav>
+      <div>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+            alt="Search"
+            width="20"
+            style="vertical-align: middle"
+        /></a>
+        |
+        <a href="cart.html">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+            alt="Cart"
+            width="20"
+            style="vertical-align: middle; margin-right: 4px"
+          />
+          Cart (1)
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="cart">
+        <h2 class="card-title">Your Cart</h2>
+        <table border="0">
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="checkout.html"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlp-Ltk9qnyjnLsGhF5p4Tx5n8T83yCg9Zfg&s"
+                  alt="T-Shirt" /></a
+              ><br />
+              T-Shirt<br />Size: Small
+            </td>
+            <td><b>$20.00</b></td>
+            <td>
+              <input type="number" value="1" min="1" style="width: 40px" />
+            </td>
+          </tr>
+        </table>
+        <p><b>Subtotal: $20.00</b></p>
+      </div>
+
+      <div class="summary">
+        <h4>Summary (1 item)</h4>
+        <table width="100%">
+          <tr>
+            <td>Subtotal</td>
+            <td align="right">$20.00</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td align="right">-</td>
+          </tr>
+          <tr>
+            <td>Est. Taxes</td>
+            <td align="right">-</td>
+          </tr>
+          <tr>
+            <td><b>Total</b></td>
+            <td align="right"><b>$20.00</b></td>
+          </tr>
+        </table>
+        <br />
+        <a href="checkout.html"><button class="check">Checkout</button></a>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        Memet store<br />
+        <a href="#">Category X</a> | <a href="#">Category Y</a> |
+        <a href="#">Category Z</a>
+      </div>
+      <div>
+        Stay In Touch! Join our Newsletter<br />
+        <input type="email" placeholder="Enter Email" />
+        <button>Subscribe</button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f8f8f8;
+      }
+      header {
+        background: #fff;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ddd;
+      }
+      footer {
+        background: #fff;
+        padding: 10px 40px;
+        display: flex;
+        margin-top: 10rem;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ddd;
+        font-size: 14px;
+      }
+      header a {
+        margin: 0 50px;
+        color: #807676;
+        text-decoration: none;
+      }
+      footer a {
+        margin: 0 10px;
+        color: #807676;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+      }
+      .info {
+        width: 60%;
+      }
+      .summary {
+        width: 30%;
+        background: #d5d4da;
+        padding: 15px;
+        border: 1px solid #ddd;
+      }
+      .est {
+        border-bottom: #000000;
+      }
+      .summary input {
+        border: 1px solid #000000;
+        width: 80%;
+        padding: 5px;
+      }
+      .apply {
+        padding: 5px 10px;
+        background: rgb(255, 255, 255);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        color: rgb(160, 153, 153);
+        border: none;
+        cursor: pointer;
+      }
+      .total {
+        border-top: 1px solid #ffffff;
+        padding-top: 10px;
+        margin-top: 10px;
+      }
+      .harga {
+        float: right;
+      }
+      input[type="email"] {
+        padding: 5px;
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; gap: 8px">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xnrOW3SZyJ1vkpmLA38eOszm2Y70YiEYNg&s"
+          alt="Logo"
+          width="50"
+          height="30"
+        />
+        <b>Math Store</b>
+      </div>
+      <nav>
+        <a href="#">Category 1</a> | <a href="#">Category 2</a> |
+        <a href="#">Category 3</a>
+      </nav>
+      <div>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+            alt="Search"
+            width="20"
+            style="vertical-align: middle"
+        /></a>
+        |
+        <a href="cart.html">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+            alt="Cart"
+            width="20"
+            style="vertical-align: middle; margin-right: 4px"
+          />
+          Cart (1)
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="info">
+        <h2>✅ Thank you, Bro!</h2>
+        <p>
+          Your order is confirmed.<br />We’ve accepted your order and we’re
+          getting it ready.
+        </p>
+
+        <h3>Customer Information</h3>
+        <table border="0">
+          <tr>
+            <td><b>Shipping Address</b></td>
+            <td><b>Billing Address</b></td>
+          </tr>
+          <tr>
+            <td>
+              Bang Lorem<br />
+              Jl.H.Taqwa No 108<br />
+              Bekasi, Poge 17413<br />
+              <a href="#">Indonesia</a>
+            </td>
+            <td>
+              Bang Lorem.<br />
+              Jl.H.Taqwa No 108<br />
+              Bekasi, Poge 17413<br />
+              <a href="#">Indonesia</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Shiping Method:</b><br />
+              UPS Ground (estimated 3-5 days)
+            </td>
+
+            <td>
+              <b>Payment Method:</b><br />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+                alt="Visa"
+                width="40"
+                style="vertical-align: middle"
+              />
+              Ending in 3217 — $23.60
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="summary">
+        <h4>Summary (1 item)</h4>
+        <table width="100%">
+          <tr>
+            <td>Subtotal</td>
+            <td align="right">$20.00</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td align="right">$2.20</td>
+          </tr>
+          <tr>
+            <p class="est">
+              <td>Est. Taxes</td>
+              <td align="right">$1.40</td>
+            </p>
+          </tr>
+        </table>
+        <br />
+        <input type="text" placeholder="Gift card or discount code" />
+        <button class="apply">Apply</button>
+        <tr>
+          <div class="total">
+            <td><b>Total</b></td>
+            <td align="right"><b class="harga">$23.60</b></td>
+          </div>
+        </tr>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        Memet store<br />
+        <a href="#">Category X</a> | <a href="#">Category Y</a> |
+        <a href="#">Category Z</a>
+      </div>
+      <div>
+        Stay In Touch! Join our Newsletter<br />
+        <input type="email" placeholder="Enter Email" />
+        <button>Subscribe</button>
+      </div>
+    </footer>
+  </body>
+</html>

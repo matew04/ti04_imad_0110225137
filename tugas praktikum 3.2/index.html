@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Barang</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a> | <a href="#">Generate Link</a> |
+      <a href="#">Transaction History</a> | <a href="#">Policy</a> |
+      <a href="#">Logout</a>
+    </div>
+
+    <form action="output.php" method="post" class="form-container">
+      <div class="container">
+        <div class="left">
+          <div class="image-box"></div>
+          <button type="button">Upload Picture</button>
+        </div>
+
+        <div class="right">
+          <div class="form-row">
+            <label>Title Here :</label>
+            <input
+              type="text"
+              name="title"
+              placeholder="Masukkan nama barang anda"
+            />
+          </div>
+
+          <div class="form-row">
+            <label>Description :</label>
+            <textarea
+              name="desc"
+              rows="3"
+              placeholder="Insert your product desc"
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <label>Account Number :</label>
+            <input
+              type="text"
+              name="account_no"
+              placeholder="Insert account number"
+            />
+          </div>
+
+          <div class="form-row">
+            <label>Bank :</label>
+            <select name="bank">
+              <option>HSBC</option>
+              <option>BCA</option>
+              <option>Mandiri</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label>Account Holder :</label>
+            <input type="text" name="holder" placeholder="Name here" />
+          </div>
+
+          <div class="form-row">
+            <label>Transaction :</label>
+            <input
+              type="number"
+              name="transaction"
+              min="1"
+              value="1"
+              style="width: 70px"
+            />
+          </div>
+
+          <p style="font-size: 12px; margin-left: 160px">
+            * if the transaction is for 3 person, choose 3 from the drop-down
+            list
+          </p>
+
+          <div class="form-row">
+            <label></label>
+            <div>
+              <input type="checkbox" name="send_phone" checked />
+              <span style="color: green">Send to Mobile Phone</span><br />
+              <input type="checkbox" name="send_email" checked />
+              <span style="color: green">Send to Email</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Send to Mobile Phone :</label>
+            <input type="text" name="phone" value="+62" />
+          </div>
+
+          <div class="form-row">
+            <label>Send to Email :</label>
+            <input type="text" name="email" placeholder="Insert email adress" />
+          </div>
+
+          <div class="form-row">
+            <label></label>
+            <button type="submit" class="generate-btn">
+              Generate Nabr Link
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
