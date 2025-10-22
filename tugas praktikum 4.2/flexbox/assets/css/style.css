@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Supaya padding dan border tidak menambah ukuran elemen */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Jenis font untuk seluruh halaman */
+  line-height: 1.5; /* Jarak antar baris teks */
+  background-color: #f5f5f5; /* Warna latar belakang halaman */
+}
+
+header {
+  background-color: #ffe45e; /* Warna kuning lembut */
+  text-align: center; /* Teks berada di tengah */
+  padding: 20px; /* Jarak dalam (atas-bawah) */
+}
+
+nav {
+  background-color: #b7ff5e; /* Warna hijau muda */
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none; /* Hilangkan bullet list */
+  display: flex; /* Gunakan flexbox agar item sejajar */
+  justify-content: center; /* Rata tengah */
+  gap: 20px; /* Jarak antar menu */
+}
+
+nav a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: blue; /* Warna berubah saat di-hover */
+}
+
+.container {
+  display: flex; /* Atur layout horizontal */
+  flex-direction: row; /* Susun anak-anak sejajar ke samping */
+  justify-content: space-between; /* Beri jarak di antara elemen */
+  padding: 20px;
+}
+
+article {
+  flex: 3; /* Lebih lebar dibanding aside */
+  background-color: #ffd77a; /* Warna kuning pastel */
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+article section {
+  background-color: #ffecb3; /* Warna section yang lebih terang */
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+aside {
+  flex: 1; /* Lebar lebih kecil */
+  background-color: #5edfff; /* Warna biru muda */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+aside .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+asside .gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin: auto;
+}
+
+asside .gallery img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #ffe45e;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
