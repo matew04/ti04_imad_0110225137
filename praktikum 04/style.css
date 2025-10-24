@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffcc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff8dc;
+  padding: 2px;
+}
+
+.perkutut {
+  background-color: burlywood;
+  padding: 10px;
+}
+h1 {
+  color: rgb(31, 31, 255);
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.quote {
+  background-color: rgb(238, 203, 6);
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 15px;
+  border: dotted 2px;
+}
+
+.menu {
+  text-align: center;
+  background-color: #fff8dc;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.menu a {
+  color: purple;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.image-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.image-section img {
+  width: 200px;
+  margin: 0 10px;
+  border: 2px solid #ccc;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+}
+
+h3 {
+  color: darkblue;
+  margin-top: 20px;
+}

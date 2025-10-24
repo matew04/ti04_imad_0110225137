@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpukat</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: azure;
+      }
+      h1 {
+        color: darkgreen;
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        width: fit-content;
+      }
+      .center {
+        width: 23%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        float: right;
+      }
+      .content {
+        margin-top: 50px;
+        background-color: rgb(185, 213, 224);
+      }
+      .foto {
+        background-color: rgb(41, 36, 36);
+        display: flex;
+      }
+      .foto img {
+        width: 20%;
+        margin: auto;
+      }
+      .promo {
+        text-align: center;
+        color: red;
+      }
+      .cod {
+        margin: auto;
+        width: 25%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .cod p {
+        text-align: center;
+        background-color: turquoise;
+        border: 3px dotted black;
+        font-weight: bold;
+        color: blue;
+      }
+      #tombols {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: yellow;
+        color: red;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-color: #7b5c2e;
+        overflow: hidden;
+      }
+
+      /* ===== GARIS PUTUS-PUTUS MELENGKUNG ===== */
+      .path-lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      /* ===== TEKS VITAMIN ===== */
+      .vitamin {
+        position: absolute;
+        width: 220px;
+        z-index: 2;
+      }
+
+      .vitamin h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #fff;
+      }
+
+      .vitamin p {
+        margin-top: 6px;
+        font-size: 0.9rem;
+        color: #f1f1f1;
+      }
+
+      /* ===== TITIK HIJAU ===== */
+      .vitamin::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #6ef27a;
+        border-radius: 50%;
+        position: absolute;
+        left: -25px;
+        top: 8px;
+      }
+
+      /* ===== POSISI ZIG-ZAG ===== */
+      .v1 {
+        top: 40px;
+        left: 100px;
+      }
+      .v2 {
+        top: 190px;
+        left: 500px;
+      }
+      .v3 {
+        top: 100px;
+        left: 62%;
+      }
+      .v4 {
+        top: 250px;
+        left: 80%;
+      }
+      .tabel-harga {
+        text-align: center;
+        margin: 40px auto;
+        width: 90%;
+      }
+
+      .tabel-harga h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      th {
+        background-color: #3c8dbc;
+        color: white;
+        padding: 10px;
+      }
+
+      td {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #eaf3fc;
+      }
+
+      tbody tr:hover {
+        background-color: #d2e7fb;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alpukat Buah Nikmat Kaya Manfaat</h1>
+    <img src="images/alpukat.jpg" alt="" class="center" />
+    <p>
+      Alpukat adalah buah yang memiliki bentuk lonjong dengan kulit berwarna
+      hijau tua hingga kehitaman dan daging buah berwarna hijau kekuningan yang
+      lembut serta berlemak. Buah ini berasal dari Amerika Tengah dan kini
+      banyak dibudidayakan di berbagai negara tropis, termasuk Indonesia.
+      Alpukat kaya akan lemak tak jenuh tunggal, vitamin E, K, C, serta serat
+      yang baik untuk kesehatan tubuh. Rasanya yang gurih dan teksturnya yang
+      lembut membuat alpukat sering dikonsumsi langsung, dijadikan jus, maupun
+      campuran berbagai hidangan.
+    </p>
+    <p>
+      Alpukat dikenal sebagai salah satu buah yang memiliki kandungan gizi
+      tinggi dan manfaat besar bagi kesehatan. Kandungan lemak sehat di
+      dalamnya, terutama lemak tak jenuh tunggal, dapat membantu menurunkan
+      kadar kolesterol jahat dan menjaga kesehatan jantung. Selain itu, alpukat
+      juga mengandung berbagai vitamin seperti vitamin E, C, K, dan B kompleks,
+      serta mineral penting seperti kalium dan magnesium yang berperan dalam
+      menjaga fungsi tubuh agar tetap optimal.
+    </p>
+    <p>
+      Tanaman alpukat tumbuh subur di daerah beriklim tropis dan subtropis
+      dengan tanah yang gembur dan drainase baik. Pohonnya dapat tumbuh hingga
+      mencapai ketinggian 20 meter, dengan daun hijau lebat dan bunga berwarna
+      kekuningan. Buah alpukat biasanya dipanen ketika masih keras dan dibiarkan
+      matang secara alami setelah dipetik. Jenis alpukat yang populer di
+      Indonesia antara lain alpukat mentega, alpukat wina, dan alpukat aligator,
+      masing-masing memiliki ukuran dan cita rasa yang berbeda.
+    </p>
+    <p>
+      Selain dikonsumsi langsung, alpukat juga banyak dimanfaatkan dalam
+      berbagai olahan makanan dan minuman. Buah ini sering dijadikan bahan dasar
+      jus, salad, roti lapis, bahkan produk kecantikan seperti masker wajah
+      karena kandungan minyak alaminya yang menutrisi kulit. Dengan rasanya yang
+      lembut, gurih, dan kaya manfaat, alpukat menjadi salah satu buah favorit
+      yang tidak hanya lezat tetapi juga menyehatkan.
+    </p>
+    <img src="images/alpukat3.png" alt="alpukat mentega" class="center" />
+    <p>
+      Alpukat adalah buah yang memiliki bentuk lonjong dengan kulit berwarna
+      hijau tua hingga kehitaman dan daging buah berwarna hijau kekuningan yang
+      lembut serta berlemak. Buah ini berasal dari Amerika Tengah dan kini
+      banyak dibudidayakan di berbagai negara tropis, termasuk Indonesia.
+      Alpukat kaya akan lemak tak jenuh tunggal, vitamin E, K, C, serta serat
+      yang baik untuk kesehatan tubuh. Rasanya yang gurih dan teksturnya yang
+      lembut membuat alpukat sering dikonsumsi langsung, dijadikan jus, maupun
+      campuran berbagai hidangan.
+    </p>
+    <p>
+      Alpukat dikenal sebagai salah satu buah yang memiliki kandungan gizi
+      tinggi dan manfaat besar bagi kesehatan. Kandungan lemak sehat di
+      dalamnya, terutama lemak tak jenuh tunggal, dapat membantu menurunkan
+      kadar kolesterol jahat dan menjaga kesehatan jantung. Selain itu, alpukat
+      juga mengandung berbagai vitamin seperti vitamin E, C, K, dan B kompleks,
+      serta mineral penting seperti kalium dan magnesium yang berperan dalam
+      menjaga fungsi tubuh agar tetap optimal.
+    </p>
+    <p>
+      Tanaman alpukat tumbuh subur di daerah beriklim tropis dan subtropis
+      dengan tanah yang gembur dan drainase baik. Pohonnya dapat tumbuh hingga
+      mencapai ketinggian 20 meter, dengan daun hijau lebat dan bunga berwarna
+      kekuningan. Buah alpukat biasanya dipanen ketika masih keras dan dibiarkan
+      matang secara alami setelah dipetik. Jenis alpukat yang populer di
+      Indonesia antara lain alpukat mentega, alpukat wina, dan alpukat aligator,
+      masing-masing memiliki ukuran dan cita rasa yang berbeda.
+    </p>
+    <p>
+      Selain dikonsumsi langsung, alpukat juga banyak dimanfaatkan dalam
+      berbagai olahan makanan dan minuman. Buah ini sering dijadikan bahan dasar
+      jus, salad, roti lapis, bahkan produk kecantikan seperti masker wajah
+      karena kandungan minyak alaminya yang menutrisi kulit. Dengan rasanya yang
+      lembut, gurih, dan kaya manfaat, alpukat menjadi salah satu buah favorit
+      yang tidak hanya lezat tetapi juga menyehatkan.
+    </p>
+    <div class="content">
+      <div class="foto">
+        <img src="images/alpukat_aligator.png" alt="" />
+        <img src="images/alpukat.jpg" alt="" />
+        <img src="images/alpukat_mentega.png" alt="" />
+        <img src="images/alpukat3.png" alt="" />
+      </div>
+      <div class="promo">
+        <h2>
+          Anda Ingin Buah Alpukat?, <br />
+          Penawaran Khusus Bagi Anda
+        </h2>
+        <h3>
+          Harga 1 Kg
+          <del>Rp. 35.000 </del><br />Nah Sekarang
+          <strong>Rp. 25.000 Saja</strong><br />
+          Gimana? Tertarik kan?
+        </h3>
+      </div>
+      <div class="cod">
+        <p>
+          PEMBAYARAN DI TEMPAT / COD <br />
+          hanya untuk jakarta, bekasi dan depok
+          <br />POTONGAN ONGKIR Rp.5.000,- <br />UNTUK PEMBELIAN VIA TRANSFER
+        </p>
+      </div>
+      <button id="tombols">PESAN SEKARANG</button>
+    </div>
+    <div class="container">
+      <h2
+        style="
+          text-align: center;
+          color: #fff;
+          margin-top: 20px;
+          font-size: 1.5rem;
+          letter-spacing: 1px;
+        "
+      >
+        Berikut Khasiat Buah Alpukat
+      </h2>
+
+      <!-- SVG garis antar vitamin -->
+      <svg class="path-lines" viewBox="0 0 1000 400">
+        <defs>
+          <marker
+            id="arrowhead"
+            markerWidth="10"
+            markerHeight="7"
+            refX="9"
+            refY="3.5"
+            orient="auto"
+          >
+            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+          </marker>
+        </defs>
+
+        <!-- Garis dari Vitamin 1 ke Vitamin 2 -->
+        <path
+          d="M220,80 C300,100 320,150 380,180"
+          stroke="white"
+          stroke-width="2"
+          stroke-dasharray="6 6"
+          fill="none"
+          marker-end="url(#arrowhead)"
+        />
+
+        <!-- Garis dari Vitamin 2 ke Vitamin 3 -->
+        <path
+          d="M460,200 C520,160 580,130 620,120"
+          stroke="white"
+          stroke-width="2"
+          stroke-dasharray="6 6"
+          fill="none"
+          marker-end="url(#arrowhead)"
+        />
+
+        <!-- Garis dari Vitamin 3 ke Vitamin 4 -->
+        <path
+          d="M740,200 C760,240 720,330 850,280  "
+          stroke="white"
+          stroke-width="2"
+          stroke-dasharray="6 6"
+          fill="none"
+          marker-end="url(#arrowhead)"
+        />
+      </svg>
+
+      <!-- Vitamin Info -->
+      <div class="vitamin v1">
+        <h3>1. Vitamin E</h3>
+        <p>
+          Memiliki <b><i>anti aging</i></b> yang bisa mendorong perawatan kulit
+          alami
+        </p>
+      </div>
+
+      <div class="vitamin v2">
+        <h3>2. Vitamin K</h3>
+        <p>Membantu <b>mencegah</b> terjadinya <i>osteoporosis</i></p>
+      </div>
+
+      <div class="vitamin v3">
+        <h3>3. Vitamin B5</h3>
+        <p>Membantu <b>menurunkan</b> tingkat stres, meringankan rasa sakit</p>
+      </div>
+
+      <div class="vitamin v4">
+        <h3>4. Vitamin B6</h3>
+        <p>
+          Membantu <b><i>treat diabetes</i></b
+          >, pendarahan menstruasi, insomnia
+        </p>
+      </div>
+    </div>
+    <!-- Tabel Harga Alpukat -->
+    <section class="tabel-harga">
+      <h2>Daftar Harga Alpukat</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Jenis Alpukat</th>
+            <th>Harga 1 Kg</th>
+            <th>Harga 2 Kg</th>
+            <th>Harga 3 Kg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Alpukat Mentega</td>
+            <td>Rp. 35.000,-</td>
+            <td>Rp. 65.000,-</td>
+            <td>Rp. 90.000,-</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Alpukat Miki</td>
+            <td>Rp. 50.000,-</td>
+            <td>Rp. 90.000,-</td>
+            <td>Rp. 135.000,-</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Alpukat Aligator</td>
+            <td>Rp. 30.000,-</td>
+            <td>Rp. 55.000,-</td>
+            <td>Rp. 80.000,-</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Alpukat Kendil</td>
+            <td>Rp. 40.000,-</td>
+            <td>Rp. 75.000,-</td>
+            <td>Rp. 100.000,-</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
