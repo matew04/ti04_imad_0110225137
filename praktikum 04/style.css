@@ -1,80 +1,81 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffcc;
+  background: linear-gradient(90deg, #d9d9d9 0%, #f5f5f5 50%, #ffffff 100%);
   margin: 0;
   padding: 0;
 }
 
-.container {
-  width: 95%;
-  margin: 0 auto;
-  background-color: #fff8dc;
-  padding: 2px;
-}
-
-.perkutut {
+#header {
   background-color: burlywood;
-  padding: 10px;
-}
-h1 {
-  color: rgb(31, 31, 255);
   text-align: center;
-  padding: 5px;
-  margin-bottom: 0;
+  margin: 3vh;
+  padding: 0.5em;
 }
 
-.quote {
-  background-color: rgb(238, 203, 6);
-  margin: 0 auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 80%;
-  text-align: center;
-  margin-bottom: 15px;
-  border: dotted 2px;
+#header h1 {
+  color: navy;
 }
 
-.menu {
-  text-align: center;
-  background-color: #fff8dc;
-  margin-bottom: 15px;
-  margin-top: 5px;
+#header blockquote {
+  background-color: rgb(241, 188, 41);
+  font-family: "Times New Roman", Times, serif;
+  padding: 1vh;
+  border: dotted;
+  font-size: 20px;
 }
-
-.menu a {
+.navbar-link {
+  text-align: center;
+}
+.navbar-link a {
   color: purple;
-  font-weight: bold;
-  margin: 0 15px;
-  text-decoration: none;
+  font-size: 20px;
 }
 
-.image-section {
+.gambar {
   text-align: center;
-  margin-bottom: 15px;
 }
-
-.image-section img {
-  width: 200px;
-  margin: 0 10px;
-  border: 2px solid #ccc;
+.gambar img {
+  width: 20%;
 }
-
-.content p {
-  text-align: justify;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-}
-
-.first-letter {
-  font-size: 40px;
-  font-weight: bold;
+.isi B {
   color: blue;
-  float: left;
-  margin-right: 5px;
-  line-height: 1;
+  font-size: 12vh;
+}
+.isi {
+  margin-top: -20px;
 }
 
-h3 {
-  color: darkblue;
-  margin-top: 20px;
+.koleksi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.koleksi img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.promo {
+  text-align: center;
+  flex: 1;
+  padding-bottom: 0;
+}
+.promo strong {
+  color: red;
+}
+.promo h2 {
+  color: brown;
+}
+.link a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.link a:hover {
+  text-decoration: underline;
+  color: purple;
 }
