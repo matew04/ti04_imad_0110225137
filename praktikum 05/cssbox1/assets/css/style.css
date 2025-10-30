@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px 20px;
+  background-color: whitesmoke;
+}
+
+#container {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.box {
+  float: left;
+  margin: 8px;
+  width: 154px;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /*biar ga keluar sisanya*/
+}
+
+.box-image {
+  width: 100%;
+  height: 200px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
