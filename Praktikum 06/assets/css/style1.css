@@ -1,0 +1,24 @@
+header {
+    margin: -10px;
+    background-color: bisque;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+img.logo{
+    width: 50px;
+}

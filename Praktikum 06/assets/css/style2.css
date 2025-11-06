@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+header{
+    background-color: paleturquoise;
+    height: 100px;
+    line-height: 100px;
+}
+
+main{
+    display: flex;
+    height: 700px;
+    line-height: 700px;
+}
+
+article{
+    flex: 3;
+    order: 1;
+}
+
+aside{
+    flex: 1;
+    order: 2;
+    background-color: mistyrose;
+}
+
+nav{
+    flex: 1;
+    order: 3;
+    background-color: plum;
+}
+
+footer{
+    background-color: burlywood;
+    height: 300px;
+    line-height: 300px;
+}
